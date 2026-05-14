@@ -1,0 +1,33 @@
+VIDEO RÉSUMÉ FILE
+=================
+
+The site expects this exact path (relative to your portfolio / repo root):
+
+  assets/video-resume-animated.mp4
+
+ONE-TIME SETUP (Windows)
+------------------------
+1. Create a folder named  assets  next to index.html if it does not exist.
+
+2. Copy your exported file into it:
+
+   From:
+     c:\Users\omni\out\video-resume-animated.mp4
+
+   To:
+     ...\portfolio\assets\video-resume-animated.mp4
+
+   PowerShell example (adjust if your paths differ):
+
+     New-Item -ItemType Directory -Force -Path "assets"
+     Copy-Item "c:\Users\omni\out\video-resume-animated.mp4" `
+       -Destination "assets\video-resume-animated.mp4" -Force
+
+3. Refresh index.html in the browser. You should see the player under “Video résumé”.
+
+GITHUB
+------
+Commit the MP4 under assets/ and push. If GitHub warns the file is large, consider
+compressing the video or hosting on YouTube / Vimeo and embedding the link instead.
+
+GitHub blocks files larger than 100 MB; keep the MP4 under that limit.

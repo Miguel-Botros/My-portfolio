@@ -1,5 +1,5 @@
 (function () {
-  var CONTACT_EMAIL = "mabotros@ndu.edu.lb";
+  var CONTACT_EMAIL = "botrosmiguel@gmail.com";
 
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -41,5 +41,17 @@
         }
       });
     });
+  }
+
+  var videoResume = document.querySelector("#video-resume video");
+  var videoErr = document.getElementById("video-resume-error");
+  if (videoResume && videoErr) {
+    videoResume.addEventListener(
+      "error",
+      function () {
+        videoErr.hidden = false;
+      },
+      true
+    );
   }
 })();

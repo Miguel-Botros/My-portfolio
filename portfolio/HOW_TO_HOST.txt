@@ -42,6 +42,12 @@ PUBLISH ON GITHUB PAGES (FREE)
 5. After a minute, the site is live at:
    https://YOURUSERNAME.github.io/REPO-NAME/
 
+IMPORTANT
+---------
+If you see 404 at that URL, read GITHUB_PAGES_TROUBLESHOOTING.txt in this folder.
+The #1 mistake is uploading a nested "portfolio" folder so index.html is NOT
+at the repo root. index.html must sit next to README.md at the top level.
+
 PUBLISH ON GODADDY (WHAT YOUR PROFESSOR MENTIONED)
 --------------------------------------------------
 GoDaddy usually means: buy a domain + use their Website Builder OR upload static files to hosting.

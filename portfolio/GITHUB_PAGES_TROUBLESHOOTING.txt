@@ -1,0 +1,91 @@
+GITHUB PAGES — FIX “NOT WORKING” AFTER UPLOAD
+==============================================
+
+YOUR SITE URL (project repo, most students use this)
+-----------------------------------------------------
+  https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/
+
+Example:
+  https://Miguel-Botros.github.io/my-portfolio/
+
+It is NOT:
+  https://github.com/Miguel-Botros/my-portfolio   ← that is the repo page, not the website
+
+
+CHECK #1 — WRONG FOLDER (causes 404 on the Pages URL)
+------------------------------------------------------
+GitHub Pages looks for index.html at the ROOT of the branch you publish, OR inside /docs only.
+
+WRONG (very common if you dragged the whole “portfolio” folder into GitHub):
+
+  your-repo/
+    portfolio/
+      index.html
+      css/
+      js/
+
+RIGHT:
+
+  your-repo/
+    index.html
+    resume.html
+    css/
+    js/
+
+FIX: On your computer, open the portfolio folder, select EVERYTHING inside it
+(index.html, resume.html, css, js, …) and upload those to the repo root — not
+inside another empty “portfolio” folder.
+
+After fixing, wait 1–3 minutes and hard-refresh the Pages URL (Ctrl+F5).
+
+
+CHECK #2 — PAGES NOT TURNED ON
+------------------------------
+1. GitHub → open YOUR repository (the one that has index.html at root).
+2. Settings (top bar of the repo).
+3. Left sidebar → Pages.
+4. Under “Build and deployment” → Source: **Deploy from a branch**.
+5. Branch: **main** (or **master** if that is what you use).
+6. Folder: **/ (root)** — unless you deliberately put the site in /docs.
+7. Save. Wait until the green banner says “Your site is live at …”.
+
+
+CHECK #3 — PRIVATE REPOSITORY
+-----------------------------
+If the repo is **private**, GitHub Pages rules depend on your account/plan.
+Easiest test: make the repo **public** temporarily, confirm the site loads, then
+decide with your instructor if it must stay private.
+
+
+CHECK #4 — YOU OPENED THE WRONG LINK
+-------------------------------------
+After enabling Pages, copy the exact URL from the green banner on Settings → Pages.
+
+For a project site it always includes the **repo name** in the path:
+  …github.io/REPO-NAME/
+
+
+CHECK #5 — STILL “404” AFTER 10+ MINUTES
+----------------------------------------
+- Confirm the latest commit on **main** actually contains **index.html** at root:
+  Code tab → you should see index.html listed with README, not buried one level down.
+- Try an incognito/private window (cached 404).
+- Repo → Actions tab: see if anything failed (only if you use Actions for Pages).
+
+
+OPTION — YOU CANNOT MOVE FILES OUT OF A SUBFOLDER
+-------------------------------------------------
+If you must keep the site under …/portfolio/ on GitHub:
+
+1. Put a tiny index.html at the **repo root** that sends visitors to the subfolder.
+2. See the file: ROOT_redirect_to_portfolio_folder_index.html
+   Copy it to the repo root as **index.html** and edit the folder name in the
+   refresh URL if yours is not “portfolio/”.
+
+
+NEED MORE HELP?
+---------------
+Reply with:
+  1) Your repo URL (github.com/…/…)
+  2) Screenshot or list of what the “Code” tab shows at the top level (first files)
+  3) What you see when you open the *.github.io* link (404, blank, broken CSS, etc.)

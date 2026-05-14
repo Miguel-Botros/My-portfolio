@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Miguel Botros — Computer Science portfolio, projects, résumé, and contact." />
-  <title>Miguel Botros | Portfolio</title>
+  <meta name="description" content="Miguel Angel Botros — Computer Science portfolio, projects, résumé, and contact." />
+  <title>Miguel Angel Botros | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,6 +21,7 @@
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#video-resume">Video résumé</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="resume.html" target="_blank" rel="noopener">Résumé</a>
@@ -34,7 +35,7 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Computer Science · Portfolio</p>
-          <h1 id="hero-title" class="hero-title">Hi, I’m <span class="name-highlight">Miguel Botros</span>.</h1>
+          <h1 id="hero-title" class="hero-title">Hi, I’m <span class="name-highlight">Miguel Angel Botros</span>.</h1>
           <p class="hero-lead">
             I build clear, purposeful software and I’m learning how to explain technical ideas to any audience.
             This site collects selected work, side projects, and how to reach me.
@@ -42,11 +43,12 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">View projects</a>
             <a class="btn btn-ghost" href="resume.html" target="_blank" rel="noopener">View résumé</a>
+            <a class="btn btn-ghost" href="#video-resume">Video résumé</a>
           </div>
           <ul class="hero-meta" aria-label="Quick facts">
-            <li><strong>Focus</strong> Software &amp; AI literacy</li>
+            <li><strong>Focus</strong> Cybersecurity, backend &amp; automation</li>
             <li><strong>Based in</strong> Kousba, Lebanon</li>
-            <li><strong>Education</strong> Notre Dame University - Louaize (NDU) · Computer Science</li>
+            <li><strong>Education</strong> NDU · B.S. Computer Science (ABET) · 2026</li>
           </ul>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -64,13 +66,41 @@
       <div class="wrap narrow">
         <h2 id="about-title" class="section-title">About</h2>
         <p class="section-lead">
-          I’m a student developer interested in how people and intelligent systems work together.
-          I care about writing code that teammates can read later, and about communicating tradeoffs instead of hiding behind jargon.
+          I’m passionate about how technology advances and how we can apply it in real life. I enjoy problem solving and
+          troubleshooting hard technical issues, from code defects to systems and security.
         </p>
         <p>
-          Outside class I like tinkering with small tools, experimenting with generative AI in a responsible way,
-          and turning messy problems into something testable and incremental.
+          I focus on finding issues, learning how to fix them efficiently, and picking up new languages and environments quickly —
+          whether that is backend work, Linux scripting, automation, or teaching beginners.
         </p>
+      </div>
+    </section>
+
+    <section id="video-resume" class="section video-resume" aria-labelledby="video-resume-title">
+      <div class="wrap">
+        <h2 id="video-resume-title" class="section-title">Video résumé</h2>
+        <p class="section-lead">
+          Animated introduction — press play. Sound recommended.
+        </p>
+        <p id="video-resume-error" class="video-error-banner" hidden>
+          <strong>Video file not found or failed to load.</strong>
+          Put <code>video-resume-animated.mp4</code> in the <code>assets</code> folder next to <code>index.html</code>, then refresh.
+          If you use GitHub Pages, commit and push that file. See <code>COPY_VIDEO_RESUME.txt</code>.
+        </p>
+        <div class="video-shell">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            aria-label="Miguel Angel Botros video résumé"
+          >
+            <source src="assets/video-resume-animated.mp4" type="video/mp4" />
+            <p class="video-fallback">
+              Your browser cannot play this video.
+              <a href="assets/video-resume-animated.mp4" download>Download MP4</a>
+            </p>
+          </video>
+        </div>
       </div>
     </section>
 
@@ -154,27 +184,28 @@
           <div class="skill-group">
             <h3>Languages</h3>
             <ul class="skill-pills">
+              <li>C / C++</li>
+              <li>C#</li>
               <li>Python</li>
-              <li>Java</li>
-              <li>JavaScript</li>
-              <li>SQL</li>
+              <li>Assembly</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Web &amp; tools</h3>
+            <h3>Systems &amp; security</h3>
             <ul class="skill-pills">
-              <li>HTML / CSS</li>
+              <li>Linux &amp; bash</li>
+              <li>Backend dev</li>
+              <li>Ethical testing</li>
+              <li>Automation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; other</h3>
+            <ul class="skill-pills">
               <li>Git / GitHub</li>
-              <li>VS Code</li>
-              <li>Markdown</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Learning</h3>
-            <ul class="skill-pills">
-              <li>Generative AI literacy</li>
-              <li>Prompting &amp; evaluation</li>
-              <li>Basic ML concepts</li>
+              <li>Blender</li>
+              <li>Discord bots</li>
+              <li>EC-Council / CCNA</li>
             </ul>
           </div>
         </div>
@@ -190,7 +221,13 @@
           </p>
           <ul class="contact-list">
             <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+96176422866">(+961) 76 422 866</a>
+            </li>
+            <li>
               <span class="contact-label">Email</span>
+              <a href="mailto:botrosmiguel@gmail.com">botrosmiguel@gmail.com</a>
+              ·
               <a href="mailto:mabotros@ndu.edu.lb">mabotros@ndu.edu.lb</a>
             </li>
             <li>
@@ -219,7 +256,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>© <span id="year"></span> Miguel Botros. Built as a static portfolio — edit in <code>index.html</code> and redeploy.</p>
+      <p>© <span id="year"></span> Miguel Angel Botros. Built as a static portfolio — edit in <code>index.html</code> and redeploy.</p>
       <a href="#main" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
