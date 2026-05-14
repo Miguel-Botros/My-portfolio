@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Miguel Angel Botros — Computer Science portfolio, projects, résumé, and contact." />
+  <title>Miguel Angel Botros | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">MB<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#video-resume">Video résumé</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="resume.html" target="_blank" rel="noopener">Résumé</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science · Portfolio</p>
+          <h1 id="hero-title" class="hero-title">Hi, I’m <span class="name-highlight">Miguel Angel Botros</span>.</h1>
+          <p class="hero-lead">
+            I build clear, purposeful software and I’m learning how to explain technical ideas to any audience.
+            This site collects selected work, side projects, and how to reach me.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="resume.html" target="_blank" rel="noopener">View résumé</a>
+            <a class="btn btn-ghost" href="#video-resume">Video résumé</a>
+          </div>
+          <ul class="hero-meta" aria-label="Quick facts">
+            <li><strong>Focus</strong> Cybersecurity, backend &amp; automation</li>
+            <li><strong>Based in</strong> Kousba, Lebanon</li>
+            <li><strong>Education</strong> NDU · B.S. Computer Science (ABET) · 2026</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <span class="hero-tag">Open to opportunities</span>
+              <p class="hero-card-text">“Good code is not just correct — it’s understandable.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="wrap narrow">
+        <h2 id="about-title" class="section-title">About</h2>
+        <p class="section-lead">
+          I’m passionate about how technology advances and how we can apply it in real life. I enjoy problem solving and
+          troubleshooting hard technical issues, from code defects to systems and security.
+        </p>
+        <p>
+          I focus on finding issues, learning how to fix them efficiently, and picking up new languages and environments quickly —
+          whether that is backend work, Linux scripting, automation, or teaching beginners.
+        </p>
+      </div>
+    </section>
+
+    <section id="video-resume" class="section video-resume" aria-labelledby="video-resume-title">
+      <div class="wrap">
+        <h2 id="video-resume-title" class="section-title">Video résumé</h2>
+        <p class="section-lead">
+          Animated introduction — press play. Sound recommended.
+        </p>
+        <p id="video-resume-error" class="video-error-banner" hidden>
+          <strong>Video file not found or failed to load.</strong>
+          Put <code>video-resume-animated.mp4</code> in the <code>assets</code> folder next to <code>index.html</code>, then refresh.
+          If you use GitHub Pages, commit and push that file. See <code>COPY_VIDEO_RESUME.txt</code>.
+        </p>
+        <div class="video-shell">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            aria-label="Miguel Angel Botros video résumé"
+          >
+            <source src="assets/video-resume-animated.mp4" type="video/mp4" />
+            <p class="video-fallback">
+              Your browser cannot play this video.
+              <a href="assets/video-resume-animated.mp4" download>Download MP4</a>
+            </p>
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="projects-title" class="section-title">Selected projects</h2>
+          <p class="section-lead">Recent builds — add screenshots and live demo links as you ship them.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-badge">Web</span>
+              <time datetime="2026-05">May 2026</time>
+            </div>
+            <h3 class="project-title">TaskFlow — habit tracker</h3>
+            <p class="project-desc">
+              Full-stack style SPA: local storage persistence, streak logic, and a minimal UI focused on daily use.
+              Written to practice component structure and state without over-engineering.
+            </p>
+            <ul class="project-tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Live demo</a>
+              <a href="https://github.com/Miguel-Botros" class="link-arrow muted" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-badge">Data / API</span>
+              <time datetime="2026-04">Apr 2026</time>
+            </div>
+            <h3 class="project-title">Skyline — weather dashboard</h3>
+            <p class="project-desc">
+              Fetches public weather JSON, handles loading and error states, and presents a readable 5-day outlook.
+              Emphasis on defensive coding when the API shape changes.
+            </p>
+            <ul class="project-tech">
+              <li>REST</li>
+              <li>Fetch API</li>
+              <li>JSON</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Live demo</a>
+              <a href="https://github.com/Miguel-Botros" class="link-arrow muted" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-top">
+              <span class="project-badge">Web</span>
+              <time datetime="2026-05">May 2026</time>
+            </div>
+            <h3 class="project-title">Personal portfolio site</h3>
+            <p class="project-desc">
+              This site: semantic HTML, responsive layout, accessible navigation, and a small amount of JavaScript
+              for the mobile menu and mailto contact flow. Designed to stay easy to host as static files.
+            </p>
+            <ul class="project-tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="link-arrow">Live site</a>
+              <a href="https://github.com/Miguel-Botros" class="link-arrow muted" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 id="skills-title" class="section-title">Skills &amp; tools</h2>
+        <div class="skills-wrap">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="skill-pills">
+              <li>C / C++</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>Assembly</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Systems &amp; security</h3>
+            <ul class="skill-pills">
+              <li>Linux &amp; bash</li>
+              <li>Backend dev</li>
+              <li>Ethical testing</li>
+              <li>Automation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; other</h3>
+            <ul class="skill-pills">
+              <li>Git / GitHub</li>
+              <li>Blender</li>
+              <li>Discord bots</li>
+              <li>EC-Council / CCNA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-title" class="section-title">Contact</h2>
+          <p class="section-lead">
+            For questions, collaboration, or opportunities — send a short message. I usually reply within a couple of days.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+96176422866">(+961) 76 422 866</a>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:botrosmiguel@gmail.com">botrosmiguel@gmail.com</a>
+              ·
+              <a href="mailto:mabotros@ndu.edu.lb">mabotros@ndu.edu.lb</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Miguel-Botros" target="_blank" rel="noopener">github.com/Miguel-Botros</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/miguel-botros" target="_blank" rel="noopener">linkedin.com/in/miguel-botros</a>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" autocomplete="off" placeholder="e.g. Collaboration or internship question" />
+
+          <label for="body">Message</label>
+          <textarea id="body" name="body" rows="5" placeholder="Write your message here…"></textarea>
+
+          <button class="btn btn-primary" type="submit">Open in email app</button>
+          <p class="form-hint">This uses your computer’s mail program. For a form that sends without leaving the page, use Formspree or Netlify Forms later.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Miguel Angel Botros. Built as a static portfolio — edit in <code>index.html</code> and redeploy.</p>
+      <a href="#main" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
