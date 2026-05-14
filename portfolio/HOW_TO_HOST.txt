@@ -1,0 +1,61 @@
+PORTFOLIO — HOW TO USE AND PUBLISH
+==================================
+
+WHERE THE FILES ARE
+-------------------
+Folder: portfolio/
+  index.html       — main site (home, projects, skills, contact)
+  resume.html      — printable résumé (use browser Print → Save as PDF)
+  css/styles.css   — site styling
+  css/resume.css   — résumé / print styling
+  js/main.js       — mobile menu + contact mailto helper
+
+PREVIEW ON YOUR COMPUTER
+------------------------
+1. Double-click index.html to open it in Chrome / Edge / Firefox.
+   OR
+2. In VS Code / Cursor: install “Live Server” and click “Go Live” from the portfolio folder.
+
+WHAT YOU MUST CUSTOMIZE (search and replace)
+---------------------------------------------
+Open index.html and resume.html and replace:
+
+  Your Name
+  youremail@university.edu
+  Your City, Country
+  github.com/yourusername
+  linkedin.com/in/yourprofile
+
+Also in js/main.js change:
+
+  CONTACT_EMAIL = "youremail@university.edu"
+
+Update project titles, descriptions, and links (replace # with real GitHub / demo URLs).
+
+PUBLISH ON GITHUB PAGES (FREE)
+------------------------------
+1. Create a new GitHub repository (e.g. my-portfolio).
+2. Upload everything inside the portfolio/ folder to the repo root
+   (so index.html is at the root of the repo).
+3. Repo → Settings → Pages → Build and deployment → Source: Deploy from a branch.
+4. Branch: main, folder: / (root) → Save.
+5. After a minute, the site is live at:
+   https://YOURUSERNAME.github.io/REPO-NAME/
+
+PUBLISH ON GODADDY (WHAT YOUR PROFESSOR MENTIONED)
+--------------------------------------------------
+GoDaddy usually means: buy a domain + use their Website Builder OR upload static files to hosting.
+
+If you have “Web Hosting” (cPanel) with a public_html folder:
+1. Zip the contents of portfolio/ (not the folder name itself if your host expects files in public_html).
+2. Upload via File Manager or FTP into public_html.
+3. Your domain should load index.html automatically.
+
+If you only have GoDaddy Website Builder (drag-and-drop):
+- You cannot upload this HTML project directly. Options:
+  (a) Use GitHub Pages for this site and point your GoDaddy domain to it (advanced), or
+  (b) Recreate sections manually in their builder using the same text from index.html.
+
+TIP: Ask your professor which GoDaddy product the class uses (builder vs hosting).
+
+END
